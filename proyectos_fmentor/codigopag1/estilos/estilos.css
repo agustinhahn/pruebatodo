@@ -1,0 +1,99 @@
+/* estilos generales */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 550px;
+    width: 750px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    font-family: 'Frank Ruhl Libre', serif;
+    background-color:  #f3ebe4 ;
+}
+
+/* contenedor principal */
+.contenedor{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: white;
+    border-radius: 2%;
+}
+
+/* elemento A */
+img{
+    height: 550px;
+}
+
+
+/* elemento B */
+.contenedor__section{
+    margin-left: 25px;
+}
+
+/* titulo chico */
+
+.article__perfume{
+    margin: 30px 0px 30px 0px;
+    letter-spacing: 5px;
+    color: gray;
+    opacity: 0.8;
+}
+
+/* titulo grande */
+
+.article__titulo{
+    margin-bottom: 25px;
+    margin-right: 100px;
+    font-size: 38px;
+}
+
+/* texto en la imagen */
+
+.article__texto{
+    margin-bottom: 20px;
+    margin-right: 120px;
+    font-size: 17px;
+    color: gray;
+}
+
+/* precios */
+
+.article__precios{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#price1{
+    font-size: 35px;
+    margin-right: 25px;
+    color:#46806a;
+}
+
+#price2{
+    text-decoration: line-through;
+    font-size: 15px;
+    color: gray;    
+}
+
+/* boton */
+
+.article__boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 250px;
+    margin-top: 20px;
+    background-color:#46806a ;
+    border-radius: 7%;
+    color:white;
+}
+
+#carrito{
+    height: 15px;
+    margin-right: 10px;
+}

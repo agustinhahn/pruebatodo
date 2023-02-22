@@ -1,0 +1,131 @@
+/* estilos generales */
+
+html{
+    font-size: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #EBEBD3;
+    font-family: 'IM Fell Great Primer SC', serif;
+}
+
+/* estilos grid */
+
+#grid_contenedor{
+    display: grid;
+}
+
+header{
+    grid-area: header;
+    background-color: #b32c2c;
+    height: 200px;
+}
+
+main{
+    grid-area: main;
+    background-color: blue;
+    height: 400px;
+}
+
+.divcontenido{
+    grid-area: div;
+    background-color: yellow;
+    height: 200px;
+}
+
+footer{
+    grid-area: 200px;
+    background-color: brown;
+    height: 100px;
+}
+
+
+
+/*Estilos titulos*/
+
+.titulos_pagina{
+    color: #232020;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+h2{
+    color: #9e6747;
+    margin: 10px;
+}
+
+
+/*Estilos barra de navegacion GENERAL*/
+
+header nav ul{
+    text-align: center;
+    background-color: #232020;
+    height: 2.5rem;
+}
+
+li{
+    display: inline-block; /*para que se pongan los enlaces horizontales*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.barranavegacion{
+    text-decoration: none; /*eliminar subrayado de hipervinculo*/
+    color:#F0F4EF;
+    background-color: #252323;
+    transition: background-color .6s;
+    padding-top: 0.6rem;
+    padding-bottom: 0.7rem;
+    margin: 0px;
+    /* box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.19), 5px 5px 0px rgba(0, 0, 0, 0.23); */
+}
+
+.barranavegacion:hover{
+    background-color: #A393BF
+}
+
+/*Estilos barra de navegacion CATALOGOS*/
+
+div nav ul.ulcatalogo{
+    background-color: #b32c2c;
+    height: 5rem;
+}
+
+li.licatalogo{
+    display: block; /*para que se pongan los enlaces horizontales*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.licatalogo{
+    text-decoration: none; /*eliminar subrayado de hipervinculo*/
+    color:#F0F4EF;
+    background-color: #252323;
+    transition: background-color .6s;
+    padding-top: 0.6rem;
+    padding-bottom: 0.7rem;
+    margin: 0px;
+    /* box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.19), 5px 5px 0px rgba(0, 0, 0, 0.23); */
+}
+
+.navcatalogo:hover{
+    background-color: #A393BF
+}
+
+/*Estilo footer*/
+
+#footer{
+    color: #232020;
+    text-align: center;
+    margin: 10px;
+}
+
+.logosfooter{
+
+    height: 3rem;
+}

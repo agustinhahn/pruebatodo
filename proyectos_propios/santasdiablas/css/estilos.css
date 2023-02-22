@@ -1,0 +1,106 @@
+/* estilos generales */
+
+html{
+    font-size: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #EBEBD3;
+    font-family: 'IM Fell Great Primer SC', serif;
+}
+
+/* estilos grid */
+
+.grid_contenedor{
+    display: grid;
+    height: 1000px;
+    /* grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px; */
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "div_contenido div_contenido div_contenido"
+    "footer footer footer";
+}
+
+header{
+    grid-area: header;
+    background-color: red;
+    height: 200px;
+}
+
+main{
+    grid-area: main;
+    background-color: blue;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divcontenido{
+    grid-area: div_contenido;
+    background-color: yellow;
+    height: 200px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: brown;
+    height: 500px;
+}
+
+
+/* estilos imagenes */
+
+img {
+    height: 100%;
+    width: 100%;
+} 
+
+.imgstyles{
+    height: 200px;
+    width: 200px;
+}
+
+/* ORDEN DE ELEMENTOS NAV */
+
+body div header nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ORDEN DE ELEMENTOS FOOTER */
+
+.logosfooter{
+    width: 40px;
+    height: 40px;
+}
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.informacion{
+    text-align: center;
+}

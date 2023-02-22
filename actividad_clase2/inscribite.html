@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripcion</title>
+    <!--estilos generales-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <!--estilos para fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="principio" class="titulos_pagina">INSCRIBITE AQUI</h1>
+    <hr>
+    <!--barra de navegacion entre sitios-->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a class="barranavegacion" href="./index.html">PAGINA PRINCIPAL</a><br>
+                </li>
+                <li>
+                    <a class="barranavegacion" href="./ingresa.html">INGRESO</a><br>
+                </li>
+                <li>
+                    <a class="barranavegacion" href="./principios.html">PRINCIPIOS BASICOS</a><br>
+                </li>
+                <li>
+                    <a class="barranavegacion" href="./juga.html">JUGAR</a><br>
+                </li>
+                <li>
+                    <a class="barranavegacion" href="./compras.html">COMPRAS</a><br>
+                </li>
+                <li>
+                    <a class="barranavegacion" href="./contacto.html">CONTACTO</a><br>
+                </li>
+                <li>
+                    <a class="barranavegacion" href="#footer">IR ABAJO</a><br>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        <!--IMAGENES TIPO LOGO-->
+    <aside>
+        <img id="caballo1ins" src="./img/chess1.png" alt="es un caballo de ajedrez">
+        <img id="caballo2ins" src="./img/chess1.png" alt="es un caballo de ajedrez">
+    </aside>
+    <hr>
+    <h2>COMPLETA EL SIGUIENTE FORMULARIO</h2>
+    <main>
+        <form>
+            <label>NOMBRE:</label>
+            <input type="text"><br><br>
+            <label>APELLIDO:</label>    
+            <input type="text"><br><br>
+            <label>DNI:</label>
+            <input type="number"><br><br>
+            <label>FECHA DE NACIMIENTO:</label>
+            <input type="date"><br><br>
+            <label>SEXO:</label><br><br>
+            <input type="radio" name="sexo" value="Hombre">
+            <label for="Hombre">HOMBRE</label><br>
+            <input type="radio" name="sexo" value="Mujer">
+            <label for="Mujer">MUJER</label><br>
+            <input type="radio" name="sexo" value="Otro">
+            <label for="Otro">OTRO</label><br><br>
+            <label>PAIS ORIGEN:</label>
+            <input type="text"><br><br>
+            <label>EMAIL:</label>
+            <input type="email"><br><br>
+            <label>CONTRASEÑA:</label>
+            <input type="password"><br><br>
+            <label>CONOCIMIENTOS:</label>
+            <select name="conocimiento" id="conocimiento">
+                <option value="B">BAJO</option>
+                <option value="M">MEDIO</option>
+                <option value="A">ALTO</option>
+            </select><br><br>
+            <label>JUGADOR FAVORITO (podes elegir maximo dos):</label><br><br>
+            <input type="checkbox" id="jugador1" name="jugador1" value="Magnus">
+            <label for="jugador1"> Magnus Carlsen</label><br>
+            <input type="checkbox" id="jugador2" name="jugador2" value="Paul">
+            <label for="jugador2"> Paul Morphy </label><br>
+            <input type="checkbox" id="jugador3" name="jugador3" value="Hikaru">
+            <label for="jugador3"> Hikaru Nakamura</label><br>
+            <input type="checkbox" id="jugador4" name="jugador4" value="Capablanca">
+            <label for="jugador4"> José Raúl Capablanca</label><br>
+            <input type="checkbox" id="jugador5" name="jugador5" value="Fischer">
+            <label for="jugador5"> Bobby Fischer</label><br>
+            <input type="checkbox" id="jugador6" name="jugador6" value="karpov">
+            <label for="jugador6"> Anatoly karpov</label><br><br>
+            <input class="submit" type="submit" value="Submit">
+        </form>
+    </main>
+
+    <hr>
+    <footer id="footer">
+        <div>
+            <img class="logosfooter" src="./img/facebook1.png" alt="logo facebook1">
+            <img class="logosfooter" src="./img/twitter.png" alt="logo twitter">
+            <img class="logosfooter" src="./img/instagram.png" alt="logo instagram">
+            <img class="logosfooter" src="./img/youtube.png" alt="logo youtube">
+            <img class="logosfooter" src="./img/gmail.png" alt="logo gmail">
+            <img class="logosfooter" src="./img/whatsapp.png" alt="logo whatsapp">
+        </div>
+        <h4>©COPYRIGHT AGUSTIN HAHN</h4>
+        <h5>agustin.f.hahn@gmail.com</h5>
+    </footer>
+</body>
+</html>

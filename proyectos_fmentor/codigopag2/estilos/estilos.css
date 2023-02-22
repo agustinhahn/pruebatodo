@@ -1,0 +1,93 @@
+/* estilos generales */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/* estilos letras */
+
+p,h1,button,img{
+    color:white;
+    margin-right: 50px;
+}
+
+/* estilos por separado */
+
+img{
+    margin:50px;
+}
+
+h1{
+    margin-left: 50px;
+}
+
+p{
+    margin-left: 50px;
+    margin-top: 35px;
+}
+
+/* estilos botones */
+
+button{
+    margin-left: 50px;
+    margin-top: 70px;       
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+
+
+#button_sedan{
+    background-color: #e18528;
+}
+
+#button_sedan:hover{
+    background-color: white;
+    color: #e18528;
+}
+
+
+#button_suv{
+    background-color: #065859;
+}
+
+#button_suv:hover{
+    background-color: white;
+    color: #065859;
+}
+
+#button_luxury{
+    background-color: #052c2a;
+}
+
+#button_luxury:hover{
+    background-color: white;
+    color:#052c2a;
+}
+
+/* estilos contenedor principal */
+
+.contenedor{
+    display: grid;
+    height: 500px;
+    width: 1000px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* estilo contenedores secundarios */
+
+
+.div_card_sedan{
+    background-color: #e18528 ;
+}
+
+.div_card_suv{
+    background-color:   #065859 ;
+}
+
+.div_car_luxury{
+    background-color: #052c2a;
+}

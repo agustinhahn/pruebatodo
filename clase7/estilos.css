@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}   
+
+.img_container {
+    height: 100px;
+    width: 100px;
+}
+
+p,
+h2,
+h3 {
+    color: white;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+nav {
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#grid_container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "section section section"
+        "footer footer footer";
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px 1fr 1fr 400px; */
+}
+
+header {
+    grid-area: header;
+    background-color: aqua;
+    height: 100px;
+}
+
+main {
+    grid-area: main;
+    background-color: blue;
+    height: 400px;
+}
+
+.section_grid {
+    grid-area: section;
+    background-color: brown;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    grid-area: footer;
+    background-color: black;
+    height: 70px;
+}
+
+.article_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end ;
+    height: 70%;
+}
+
+.redSocial {
+    height: 30px;
+    width: 30px;
+}
