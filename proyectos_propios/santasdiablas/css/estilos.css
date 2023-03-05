@@ -5,94 +5,151 @@ html{
 }
 
 *{
-    margin: 0;
-    padding: 0;
-    background-color: #EBEBD3;
+    margin: 0px;
+    padding: 0px;
+    background-color: #e0cce6;
     font-family: 'IM Fell Great Primer SC', serif;
 }
 
-/* estilos grid */
-
-.grid_contenedor{
-    display: grid;
-    height: 1000px;
-    /* grid-template-columns: 100px 100px;
-    grid-template-rows: 100px 100px 100px 100px; */
-    grid-template-areas:
-    "header header header"
-    "main main main"
-    "div_contenido div_contenido div_contenido"
-    "footer footer footer";
-}
-
-header{
-    grid-area: header;
-    background-color: red;
-    height: 200px;
-}
-
-main{
-    grid-area: main;
-    background-color: blue;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.divcontenido{
-    grid-area: div_contenido;
-    background-color: yellow;
-    height: 200px;
-}
-
-footer{
-    grid-area: footer;
-    background-color: brown;
-    height: 500px;
-}
-
-
-/* estilos imagenes */
-
-img {
-    height: 100%;
+img{
     width: 100%;
-} 
+    height: 100%;
+}
 
-.imgstyles{
-    height: 200px;
+.logo{
     width: 200px;
+    height: 150px;
 }
 
-/* ORDEN DE ELEMENTOS NAV */
+.logo__contacto{
+    width: 250px;
+    height: 250px;
+}
 
-body div header nav ul{
+/* navbar */
+
+.header__contenedor{
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header__contenedor__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.h1__titulos{
+    margin-bottom: 30px;
+}
+
+
+
+/* main de todas las pages */
+
+.main__contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: auto;
+}   
+
+.main__contacto{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    color: black;
-    height: 100%;
 }
 
-nav{
-    height: 100%;
+.main__contenedor__catalogow{
+    height: auto;
 }
 
-li{
-    list-style: none;
+.main__contenedor__catalogom{
+    height: auto;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+
+/* contenidos de los main */
+
+.label__contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
+.col-md-6{
+    text-align: center;
+}
+
+.col-sm-12{
+    text-align: center;
+}
+
+
+.acordeon__pregfrec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img__contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.carousel-inner{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.slide{
+    width: 400px;
+}
+
+.main__carrousel__img{
+    width: 400px;
+    
+}
+
+.main__div__sobrens__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* text area */
+
+.form_contacto{
+    max-width: 600px;
+}
+
+/* img de sobre nosotros */
+
+.img__sobrenos2{
+    max-width:  600px;
+    max-height: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.img__sobrenos{
+    max-width:  600px;
+    max-height: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.main__div__sobrens__text{
+    max-width: 600px;
+}
 /* ORDEN DE ELEMENTOS FOOTER */
 
 .logosfooter{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 .logos{
     display: flex;
@@ -101,6 +158,152 @@ a{
     height: 80%;
 }
 
+h4{
+    font-size: 15px;
+}
+
+h5{
+    font-size: 10px;
+}
 .informacion{
     text-align: center;
+    margin-top: 10px;
+}
+
+/* estilos cards catalogo W */
+
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.div__catalogo{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.div_catalogo_img {
+    height: auto;
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    /* vertical-align: middle; */
+}
+
+
+.boton__catalogo {
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+}
+
+.boton__catalogo:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards__catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards__item__catalogo {
+    display: flex;
+    padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .cards__item__catalogo {
+    width: 50%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .cards__item__catalogo {
+    width: 33.3333%;
+    }
+}
+
+.card__catalogo {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card__content__catalogow {
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #ad83ac 70%, #d6bcd6 100%);
+}
+
+.card__content__catalogom{
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #8087af 70%, #bcc1d6 100%);
+}
+
+.card__title__catalogow {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+    background-color:  #ad83ac;
+}
+
+.card__title__catalogom{
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+    background-color:  #8087af;
+
+}
+
+.card__text__catalogow {
+    color: black;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;    
+    font-weight: 400;
+    background-color: #ad83ac;
+}
+
+.card__text__catalogom{
+    color: black;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;    
+    font-weight: 400;
+    background-color: #8087af;
+}
+
+.made_by{
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.boton__modal__catalogo{
+    background-color: transparent;
 }

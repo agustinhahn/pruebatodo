@@ -4,50 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cdn bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- estilos css -->
     <link rel="stylesheet" href="../css/estilos.css">
-    <title>PRINCIPAL</title>
+    <title>Inicio</title>
 </head>
 <body>
-    <div class="grid_contenedor">
-        <!--barra de navegacion entre sitios-->
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a class="barranavegacion" href="./catalogo.html">CATALOGO</a><br>
-                    </li>
-                    <li>
-                        <a class="barranavegacion" href="./carrito.html">CARRITO</a><br>
-                    </li>
-                    <li>
-                        <a class="barranavegacion" href="./sobre_nosotros.html">SOBRE NOSOTROS</a><br>
-                    </li>
-                    <li>
-                        <a class="barranavegacion" href="./contacto.html">CONTACTO</a><br>
-                    </li>
-                </ul>
-            </nav>
+    <!-- contenedor general -->
+    <div class="container-fluid mt-3">
+        <header class="row header__contenedor">
+            <!-- img logo page -->
+            <img class="logo" src="../img/logosdmejorado.png" alt="logosd">
+            <!-- barra de navegacion -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary text-center mb-5">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="header__contenedor__nav collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Catalogo
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./catalogo_w.html">Mujeres</a></li>
+                                    <li><a class="dropdown-item" href="./catalogo_m.html">Hombres</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./sobre_nosotros.html">Sobre nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./preguntas_frecuentes.html">Preguntas Frecuentes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>          
         </header>
-        <main>
-            <section>
-                <article class="article1">
-                    <img class="imgstyles" src="../img/body1.jpeg" alt="foto1">
-                    <p>esta es una foto</p>
-                </article>
-                <article class="article1">
-                    <img class="imgstyles" src="../img/body2.jpeg" alt="foto2">
-                    <p>esta es una foto</p>
-                </article>
-            </section>
+        <!-- carrousel de imagenes -->
+        <section class="row text-center mt-3 mb-5 col-xl-12 col-md-12 col-sm-12 col-xs-12">
+            <p>BIENVENIDOS A NUESTRA TIENDA ONLINE</p>
+        </section>
+        <main class="row main__contenedor">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade col-xl-6 col-md-6 col-sm-6 col-xs-6 mb-5">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="main__carrousel__img" src="../img/body1.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="main__carrousel__img" src="../img/body2.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="main__carrousel__img" src="../img/body3.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div id="carouselExampleFade2" class="carousel slide carousel-fade col-xl-6 col-md-6 col-sm-6 col-xs-6 mb-5">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="main__carrousel__img" src="../img/body1.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="main__carrousel__img" src="../img/body2.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="main__carrousel__img" src="../img/body3.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </main>
-        <div class="divcontenido">
-            <section>
-                <h2>ESTA PAGINA QUEDARA SARPADA</h2>
-            </section>
-        </div>
-        <!--IMAGENES TIPO LOGO-->
-        <hr>
-        <footer id="footer">
+        <footer class="footer">
             <div class="logos">
                 <img class="logosfooter" src="../img/facebook1.png" alt="logo facebook1">
                 <img class="logosfooter" src="../img/twitter.png" alt="logo twitter">
@@ -62,5 +110,6 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

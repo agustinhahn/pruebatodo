@@ -4,47 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cdn bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- estilos css -->
     <link rel="stylesheet" href="../css/estilos.css">
-    <title>NOSOTROS</title>
+    <title>Inicio</title>
 </head>
 <body>
-    <h1 class="titulos_pagina">SOBRE NOSOTROS</h1>
-    <div>
-        <img class="logosd" src="../img/logosdmejorado.png" alt="logo santas diablas">
+    <!-- contenedor general -->
+    <div class="container-fluid mt-5">
+        <header class="row header__contenedor text-center">
+            <h1 class="h1__titulos">Sobre nosotros</h1>
+            <!-- barra de navegacion -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary text-center col-xl-12 col-md-12 col-sm-12 mb-5">
+                <div class="container-fluid">
+                    <div class="header__contenedor__nav navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Volver al inicio</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>          
+        </header>
+        <!-- imagenes y texto del main -->
+        <main>
+            <div class="row">
+                <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12">
+                    <img class="img__sobrenos" src="../img/celifabi2.jpeg" alt="fotossd">
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12 main__div__sobrens__text">
+                    <h2>
+                        Las creadoras
+                    </h2>        
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ipsa quisquam? Consequatur neque, quidem voluptates excepturi aspernatur ducimus est possimus ab nisi. Minus aut totam doloribus id explicabo sapiente consectetur!</p>
+                    <h2>
+                        Inicios
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ipsa quisquam? Consequatur neque, quidem voluptates excepturi aspernatur ducimus est possimus ab nisi. Minus aut totam doloribus id explicabo sapiente consectetur!</p>
+                    <h2>
+                        Futuro
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ipsa quisquam? Consequatur neque, quidem voluptates excepturi aspernatur ducimus est possimus ab nisi. Minus aut totam doloribus id explicabo sapiente consectetur!</p>
+                </div>
+            </div>
+            <div class="row mt-5 mb-5">
+                <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12 main__div__sobrens__text">
+                    <h2>
+                        Procesos
+                    </h2>        
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ipsa quisquam? Consequatur neque, quidem voluptates excepturi aspernatur ducimus est possimus ab nisi. Minus aut totam doloribus id explicabo sapiente consectetur!</p>
+                    <h2>
+                        Aprendizajes
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ipsa quisquam? Consequatur neque, quidem voluptates excepturi aspernatur ducimus est possimus ab nisi. Minus aut totam doloribus id explicabo sapiente consectetur!</p>
+                    <h2>
+                        Sueños
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ipsa quisquam? Consequatur neque, quidem voluptates excepturi aspernatur ducimus est possimus ab nisi. Minus aut totam doloribus id explicabo sapiente consectetur!</p>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12">
+                    <img class="img__sobrenos2" src="../img/celifabi3.jpeg" alt="fotossd">
+                </div>
+            </div>
+        </main>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="logos">
+                <img class="logosfooter" src="../img/facebook1.png" alt="logo facebook1">
+                <img class="logosfooter" src="../img/twitter.png" alt="logo twitter">
+                <img class="logosfooter" src="../img/instagram.png" alt="logo instagram">
+                <img class="logosfooter" src="../img/youtube.png" alt="logo youtube">
+                <img class="logosfooter" src="../img/gmail.png" alt="logo gmail">
+                <img class="logosfooter" src="../img/whatsapp.png" alt="logo whatsapp">
+            </div>
+            <div class="informacion">
+                <h4>©COPYRIGHT AGUSTIN HAHN</h4>
+                <h5>agustin.f.hahn@gmail.com</h5>
+            </div>
+        </footer>
     </div>
-    <hr>
-    <!--barra de navegacion entre sitios-->
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a class="barranavegacion" href="./index.html">INICIO</a><br>
-                </li>
-                <li>
-                    <a class="barranavegacion" href="./catalogo.html">CATALOGO</a><br>
-                </li>
-                <li>
-                    <a class="barranavegacion" href="./carrito.html">CARRITO</a><br>
-                </li>
-                <li>
-                    <a class="barranavegacion" href="./contacto.html">CONTACTO</a><br>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!--IMAGENES TIPO LOGO-->
-    <hr>
-    <footer id="footer">
-        <div>
-            <img class="logosfooter" src="../img/facebook1.png" alt="logo facebook1">
-            <img class="logosfooter" src="../img/twitter.png" alt="logo twitter">
-            <img class="logosfooter" src="../img/instagram.png" alt="logo instagram">
-            <img class="logosfooter" src="../img/youtube.png" alt="logo youtube">
-            <img class="logosfooter" src="../img/gmail.png" alt="logo gmail">
-            <img class="logosfooter" src="../img/whatsapp.png" alt="logo whatsapp">
-        </div>
-        <h4>©COPYRIGHT AGUSTIN HAHN</h4>
-        <h5>agustin.f.hahn@gmail.com</h5>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
