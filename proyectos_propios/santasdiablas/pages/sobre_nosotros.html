@@ -8,20 +8,39 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- estilos css -->
     <link rel="stylesheet" href="../css/estilos.css">
-    <title>Inicio</title>
+    <title>sobre nosotros</title>
 </head>
 <body>
     <!-- contenedor general -->
-    <div class="container-fluid mt-5">
+    <div class="container-fluid mt-3">
         <header class="row header__contenedor text-center">
-            <h1 class="h1__titulos">Sobre nosotros</h1>
+            <!-- img logo page -->
+            <img class="logo" src="../img/logosdmejorado.png" alt="Logo website">
             <!-- barra de navegacion -->
-            <nav class="navbar navbar-expand-lg bg-body-tertiary text-center col-xl-12 col-md-12 col-sm-12 mb-5">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary text-center mb-5">
                 <div class="container-fluid">
-                    <div class="header__contenedor__nav navbar-collapse" id="navbarNavDropdown">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="header__contenedor__nav collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="./index.html">Volver al inicio</a>
+                                <a class="nav-link" href="../index.html">Volver al inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./preguntas_frecuentes.html">Preguntas frecuentes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contactos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Catalogo
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./catalogo_w.html">Mujeres</a></li>
+                                    <li><a class="dropdown-item" href="./catalogo_m.html">Hombres</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -30,42 +49,43 @@
         </header>
         <!-- imagenes y texto del main -->
         <main>
-            <div class="row">
+            <h1 class="text-center mb-5 animated fadeInUp">CONOCENOS</h1>
+            <div class="row div__sobrenos">
                 <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12">
-                    <img class="img__sobrenos" src="../img/celifabi2.jpeg" alt="fotossd">
+                    <img class="img__sobrenos" src="../img/celifabi2.jpeg" alt="diseñadora y cm de la marca">
                 </div>
                 <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12 main__div__sobrens__text">
-                    <h2>
+                    <h2 class="text-center animated bounceInRight">
                         Las creadoras
                     </h2>        
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ipsa quisquam? Consequatur neque, quidem voluptates excepturi aspernatur ducimus est possimus ab nisi. Minus aut totam doloribus id explicabo sapiente consectetur!</p>
-                    <h2>
+                    <h2 class="text-center animated bounceInRight">
                         Inicios
                     </h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ipsa quisquam? Consequatur neque, quidem voluptates excepturi aspernatur ducimus est possimus ab nisi. Minus aut totam doloribus id explicabo sapiente consectetur!</p>
-                    <h2>
+                    <h2 class="text-center animated bounceInRight">
                         Futuro
                     </h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ipsa quisquam? Consequatur neque, quidem voluptates excepturi aspernatur ducimus est possimus ab nisi. Minus aut totam doloribus id explicabo sapiente consectetur!</p>
                 </div>
             </div>
-            <div class="row mt-5 mb-5">
-                <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12 main__div__sobrens__text">
-                    <h2>
+            <div class="row mt-5 mb-5 div__sobrenos">
+                <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12 main__div__sobrens__text2">
+                    <h2 class="text-center">
                         Procesos
                     </h2>        
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ipsa quisquam? Consequatur neque, quidem voluptates excepturi aspernatur ducimus est possimus ab nisi. Minus aut totam doloribus id explicabo sapiente consectetur!</p>
-                    <h2>
+                    <h2 class="text-center">
                         Aprendizajes
                     </h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ipsa quisquam? Consequatur neque, quidem voluptates excepturi aspernatur ducimus est possimus ab nisi. Minus aut totam doloribus id explicabo sapiente consectetur!</p>
-                    <h2>
+                    <h2 class="text-center">
                         Sueños
                     </h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ipsa quisquam? Consequatur neque, quidem voluptates excepturi aspernatur ducimus est possimus ab nisi. Minus aut totam doloribus id explicabo sapiente consectetur!</p>
                 </div>
                 <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12">
-                    <img class="img__sobrenos2" src="../img/celifabi3.jpeg" alt="fotossd">
+                    <img class="img__sobrenos2" src="../img/celifabi3.jpeg" alt="diseñadora y cm de la marca 2">
                 </div>
             </div>
         </main>

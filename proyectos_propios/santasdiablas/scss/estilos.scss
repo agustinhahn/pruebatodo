@@ -1,0 +1,472 @@
+/* estilos generales */
+
+html{
+    font-size: 100%;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #c3a0ce;
+    font-family: 'IM Fell Great Primer SC', serif;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .logo{
+        width: 200px;
+        height: 150px;
+    }
+    
+}
+
+/* navbar */
+
+.header__contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .h1__titulos{
+        margin-bottom: 30px;
+    }
+
+    .header__contenedor__nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        a:hover{
+            background-color: #a786b1;
+            transition: all 0.2s  ease-in;
+            transform:scale(1.05);
+            transition: all 0.01s  ease-out;
+        }
+    }
+}
+
+// titulos h1
+@-webkit-keyframes fadeInUp {
+    from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+}
+
+@keyframes fadeInUp {
+from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+}
+
+.fadeInUp {
+-webkit-animation-name: fadeInUp;
+animation-name: fadeInUp;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+/* main general */
+
+.main__contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: auto;  
+    width: auto;
+}   
+
+
+// main - index
+
+.main__index{
+    .div__carousel{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        .main__carrousel__img{
+            max-width: 722.5px;
+            
+        }
+    }
+}
+
+// main - contacto
+
+.main__contacto{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .div__mapa__contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        .mapa__contacto{
+            max-width: 1200px;
+            @media (max-width: 580px){
+                width: 415px;
+            }
+            @media (max-width: 415px){
+                width: 395px;
+            }
+            @media (max-width: 395px){
+                width: 280px;
+            }
+            @media (max-width: 280px){
+                width: 200px;
+            }
+        }
+    }
+
+    .label__contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .form_contacto{
+            max-width: 600px;
+        }
+    }
+
+    #button__form {
+        padding-left: 33px;
+        padding-right: 33px;
+        padding-bottom: 16px;
+        padding-top: 16px;
+        border-radius: 9px;
+        background: #8087af;
+        border: none;
+        cursor: pointer;
+        transition: 0.4s;
+        height: 55px;
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: flex-start;
+    }
+    
+    #button__form:hover {
+    box-shadow: 7px 5px 56px -14px #2a3ca3;
+    }
+    
+    #p__button__form{
+        background-color: #8087af ;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .img__contacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+        .logo__contacto{
+            width: 250px;
+            height: 250px;
+        }
+    }
+}
+
+
+// main catalogos
+
+.main__catalogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .div__catalogo{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        .cards__item__catalogo {
+            display: flex;
+            padding: 1rem;
+            .card__catalogo {
+                background-color: white;
+                border-radius: 0.25rem;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                .div_catalogo_img {
+                    height: auto;
+                    max-width: 100%;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                }
+                .boton__catalogo {
+                    color: #ffffff;
+                    padding: 0.8rem;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    border-radius: 4px;
+                    font-weight: 400;
+                    display: block;
+                    width: 100%;
+                    cursor: pointer;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    background: transparent;
+                    .boton__catalogo:hover {
+                        background-color: rgba(255, 255, 255, 0.12);
+                    }
+                }
+                .boton__modal__catalogo{
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 40rem) {
+    .cards__item__catalogo {
+    width: 50%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .cards__item__catalogo {
+    width: 33.3333%;
+    }
+}
+
+
+// contenido catalogo M
+
+.main__contenedor__catalogom{
+    height: auto;
+    .card__content__catalogom{
+        padding: 1rem;
+        background: linear-gradient(to bottom left, #8087af 70%, #bcc1d6 100%);
+        .card__title__catalogom{
+            color: black;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            margin: 0px;
+            background-color:  #8087af;
+        }
+        .card__text__catalogom{
+            color: black;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            margin-bottom: 1.25rem;    
+            font-weight: 400;
+            background-color: #8087af;
+        }
+    }
+}
+
+// contenido catalogo W
+
+.main__contenedor__catalogow{
+    height: auto;
+    .card__content__catalogow {
+        padding: 1rem;
+        background: linear-gradient(to bottom left, #ad83ac 70%, #d6bcd6 100%);
+        .card__title__catalogow {
+            color: black;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            margin: 0px;
+            background-color:  #ad83ac;
+        }
+        .card__text__catalogow {
+            color: black;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            margin-bottom: 1.25rem;    
+            font-weight: 400;
+            background-color: #ad83ac;
+        }
+    }
+}
+
+// contenido preg frecuentes
+
+.acordeon__pregfrec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.div__pregfrec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .div__img__pregfrec{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .img__pregfrec{
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+
+// contenido sobre nosotros
+
+.div__sobrenos{
+    .main__div__sobrens__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 600px;
+        // titulos h2
+        @-webkit-keyframes bounceInRight {
+            from, 60%, 75%, 90%, to {
+            -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+        
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(3000px, 0, 0);
+            transform: translate3d(3000px, 0, 0);
+        }
+        
+        60% {
+            opacity: 1;
+            -webkit-transform: translate3d(-25px, 0, 0);
+            transform: translate3d(-25px, 0, 0);
+        }
+        
+        75% {
+            -webkit-transform: translate3d(10px, 0, 0);
+            transform: translate3d(10px, 0, 0);
+        }
+        
+        90% {
+            -webkit-transform: translate3d(-5px, 0, 0);
+            transform: translate3d(-5px, 0, 0);
+        }
+        
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        }
+        
+        @keyframes bounceInRight {
+        from, 60%, 75%, 90%, to {
+            -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+        
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(3000px, 0, 0);
+            transform: translate3d(3000px, 0, 0);
+        }
+        
+        60% {
+            opacity: 1;
+            -webkit-transform: translate3d(-25px, 0, 0);
+            transform: translate3d(-25px, 0, 0);
+        }
+        
+        75% {
+            -webkit-transform: translate3d(10px, 0, 0);
+            transform: translate3d(10px, 0, 0);
+        }
+        
+        90% {
+            -webkit-transform: translate3d(-5px, 0, 0);
+            transform: translate3d(-5px, 0, 0);
+        }
+        
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        }
+        
+        .bounceInRight {
+        -webkit-animation-name: bounceInRight;
+        animation-name: bounceInRight;
+        }
+        
+        .animated {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+    }
+    .main__div__sobrens__text2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 600px;
+    }
+    .img__sobrenos{
+        max-width:  600px;
+        max-height: 800px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+    }
+    
+    .img__sobrenos2{
+        max-width:  600px;
+        max-height: 600px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+    }    
+}
+
+// footer
+
+.footer{
+    .logos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+    
+            .logosfooter{
+                width: 30px;
+                height: 30px;
+            }
+    }
+    
+    .informacion{
+        text-align: center;
+        margin-top: 10px;
+        h4{
+            font-size: 15px;
+        }
+        
+        h5{
+            font-size: 10px;
+        }
+    }
+}
+

@@ -7,7 +7,7 @@
     <!-- cdn bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- estilos css -->
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
     <title>Inicio</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
     <div class="container-fluid mt-3">
         <header class="row header__contenedor">
             <!-- img logo page -->
-            <img class="logo" src="../img/logosdmejorado.png" alt="logosd">
+            <img class="logo" src="./img/logosdmejorado.png" alt="Logo website">
             <!-- barra de navegacion -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary text-center mb-5">
                 <div class="container-fluid">
@@ -29,18 +29,18 @@
                                 Catalogo
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./catalogo_w.html">Mujeres</a></li>
-                                    <li><a class="dropdown-item" href="./catalogo_m.html">Hombres</a></li>
+                                    <li><a class="dropdown-item" href="./pages/catalogo_w.html">Mujeres</a></li>
+                                    <li><a class="dropdown-item" href="./pages/catalogo_m.html">Hombres</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./sobre_nosotros.html">Sobre nosotros</a>
+                                <a class="nav-link" href="./pages/sobre_nosotros.html">Sobre nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./preguntas_frecuentes.html">Preguntas Frecuentes</a>
+                                <a class="nav-link" href="./pages/preguntas_frecuentes.html">Preguntas Frecuentes</a>
                             </li>
                         </ul>
                     </div>
@@ -48,20 +48,18 @@
             </nav>          
         </header>
         <!-- carrousel de imagenes -->
-        <section class="row text-center mt-3 mb-5 col-xl-12 col-md-12 col-sm-12 col-xs-12">
-            <p>BIENVENIDOS A NUESTRA TIENDA ONLINE</p>
-        </section>
-        <main class="row main__contenedor">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade col-xl-6 col-md-6 col-sm-6 col-xs-6 mb-5">
-                <div class="carousel-inner">
+        <main class="row main__contenedor main__index">
+            <h1 class="text-center mb-5 animated fadeInUp">SANTAS DIABLAS</h1>
+            <div id="carouselExampleFade" class="row carousel slide carousel-fade col-xl-6 col-md-6 col-sm-6 col-xs-6 mb-5">
+                <div class="carousel-inner div__carousel">
                     <div class="carousel-item active">
-                        <img class="main__carrousel__img" src="../img/body1.jpeg" class="d-block w-100" alt="...">
+                        <img class="main__carrousel__img" src="./img/body1.jpeg" class="d-block w-100" alt="Body negro engomado">
                     </div>
                     <div class="carousel-item">
-                        <img class="main__carrousel__img" src="../img/body2.jpeg" class="d-block w-100" alt="...">
+                        <img class="main__carrousel__img" src="./img/body2.jpeg" class="d-block w-100" alt="Body negro tela">
                     </div>
                     <div class="carousel-item">
-                        <img class="main__carrousel__img" src="../img/body3.jpeg" class="d-block w-100" alt="...">
+                        <img class="main__carrousel__img" src="./img/body3.jpeg" class="d-block w-100" alt="Top negro">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -73,16 +71,16 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <div id="carouselExampleFade2" class="carousel slide carousel-fade col-xl-6 col-md-6 col-sm-6 col-xs-6 mb-5">
-                <div class="carousel-inner">
+            <div id="carouselExampleFade2" class="row carousel slide carousel-fade col-xl-6 col-md-6 col-sm-6 col-xs-6 mb-5">
+                <div class="carousel-inner div__carousel">
                     <div class="carousel-item active">
-                        <img class="main__carrousel__img" src="../img/body1.jpeg" class="d-block w-100" alt="...">
+                        <img class="main__carrousel__img" src="./img/body2.jpeg" class="d-block w-100" alt="Body negro engomado">
                     </div>
                     <div class="carousel-item">
-                        <img class="main__carrousel__img" src="../img/body2.jpeg" class="d-block w-100" alt="...">
+                        <img class="main__carrousel__img" src="./img/body3.jpeg" class="d-block w-100" alt="Body negro tela">
                     </div>
                     <div class="carousel-item">
-                        <img class="main__carrousel__img" src="../img/body3.jpeg" class="d-block w-100" alt="...">
+                        <img class="main__carrousel__img" src="./img/body1.jpeg" class="d-block w-100" alt="Top negro">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
@@ -94,15 +92,21 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+            <div>
+                <h2 class="text-center mb-5 mt-3">ESTO ES UN POCO DE LO QUE TENEMOS PARA MOSTRARTE</h2>
+                <p class="text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aliquid quo harum debitis, pariatur doloremque in sunt distinctio perferendis labore molestias alias commodi ipsum omnis eius dignissimos maiores porro eaque.
+                </p>
+            </div>
         </main>
-        <footer class="footer">
+        <footer class="footer mt-3">
             <div class="logos">
-                <img class="logosfooter" src="../img/facebook1.png" alt="logo facebook1">
-                <img class="logosfooter" src="../img/twitter.png" alt="logo twitter">
-                <img class="logosfooter" src="../img/instagram.png" alt="logo instagram">
-                <img class="logosfooter" src="../img/youtube.png" alt="logo youtube">
-                <img class="logosfooter" src="../img/gmail.png" alt="logo gmail">
-                <img class="logosfooter" src="../img/whatsapp.png" alt="logo whatsapp">
+                <img class="logosfooter" src="./img/facebook1.png" alt="logo facebook1">
+                <img class="logosfooter" src="./img/twitter.png" alt="logo twitter">
+                <img class="logosfooter" src="./img/instagram.png" alt="logo instagram">
+                <img class="logosfooter" src="./img/youtube.png" alt="logo youtube">
+                <img class="logosfooter" src="./img/gmail.png" alt="logo gmail">
+                <img class="logosfooter" src="./img/whatsapp.png" alt="logo whatsapp">
             </div>
             <div class="informacion">
                 <h4>©COPYRIGHT AGUSTIN HAHN</h4>
